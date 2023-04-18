@@ -53,6 +53,7 @@ html::-webkit-scrollbar-thumb{
     color: var(--black);
     font-size: 2rem;
     font-weight: bolder;
+    margin-left: 1rem;
 }
 
 .header .navbar a{
