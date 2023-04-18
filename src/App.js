@@ -18,7 +18,7 @@ function App() {
     <header class="header">
         <div class="logoContent">
             <a href="#" class="logo"><img src={require(`../src/images/logo.png`)} alt="logo"/></a>
-            <h1 class="logoName">RECETARIO COCINA II </h1>
+            <h1 class="logoName"> RECETARIO DE POSTRES COCINA II </h1>
         </div>
 
         <nav class="navbar">
@@ -344,15 +344,63 @@ function App() {
     <div className="swiper-wrapper">
         <div className=" swiper-slide box">
             <div className="img">
-                <img src={require(`../src/images/blog-img5.png`)} alt=""/>
+                <img src={require(`../src/images/blog-img1.png`)} alt=""/>
             </div>
             <div className="content">
-                <h3>Caramel Bourbon Vanilla Cupcakes </h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum voluptatum
-                    corporis accusamus aperiam fugiat tempora blanditiis labore dolor aliquid maxime nobis
-                    laborum sed soluta voluptatibus aspernatur natus, dicta quisquam.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam ab ullam reiciendis sint
-                    eaque at.</p>
+                <h3>Galletas de vainilla</h3>
+                <p>
+                <table className="tabla-ingredientes">
+                    <tr>
+                    <th>Ingrediente</th>
+                    <th>Cantidad</th>
+                    <th>Ingrediente</th>
+                    <th>Cantidad</th>
+                    </tr>
+                    <tr>
+                    <td>Margarina</td>
+                    <td>450gr</td>
+                    <td>Azúcar glass</td>
+                    <td>200gr</td>
+                    </tr>
+                    <tr>
+                    <td>Vainilla</td>
+                    <td>1 cdta</td>
+                    <td>Ralladura de limón</td>
+                    <td>-</td>
+                    </tr>
+                    <tr>
+                    <td>Yemas de huevo</td>
+                    <td>4</td>
+                    <td>Harina todo uso</td>
+                    <td>750gr</td>
+                    </tr>
+                    <tr>
+                    <td>Polvo de hornear</td>
+                    <td>1 cdta</td>
+                    <td>Gotas de chocolate</td>
+                    <td>-</td>
+                    </tr>
+                    <tr>
+                    <td>Lluvia de colores</td>
+                    <td>-</td>
+                    <td>Lluvia de chocolate</td>
+                    <td>-</td>
+                    </tr>
+                    <tr>
+                    <td>Sal</td>
+                    <td>1 pizca</td>
+                    <td>Canela</td>
+                    <td>1 cdta</td>
+                    </tr>
+                </table>
+                </p>
+                <p>1. En un bold cremar margarina, agregar el azúcar por partes y batir, seguido de la ralladura de limón y la vainilla, integrar bien, luego una a una las yemas.</p>
+                <p>2. Proceder a agregar la harina, con ayuda de una espátula tipo taroco o una paleta de madera tratar de unir los ingredientes sin amasar, aplicando la técnica del
+                sableado o arenado para lograr compactar la masa. Cubrir con papel film y dejar reposar en la nevera durante 10 o 15 minutos.</p>
+                <p>3. Retirar de la nevera y en el mesón enharinado ubicar la masa para estirar por partes, con ayuda de un rodillo y hacer formatos distintos con los cortadores de galletas,
+                para decorar añadir confitería de su preferencia antes de hornear.</p>
+                <p>4. En una bandeja engrasada ubicarlas y llevar al horno a 180° por 15 o 20 minutos, el tiempo en el horno dependerá de cómo funcione el mismo. 
+                El aspecto de las galletas debe ser un doradito suave. La crocancia la obtendrá cuando enfríen.</p>
                 <a href="#blogs" className="btn">learn more</a>
             </div>
         </div>
