@@ -278,21 +278,26 @@ section{
 }
  
 .newsletter{
-    background: url(./images/new.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background: url(./images/new5.jpg) no-repeat;
+    background-size:cover;
     background-attachment: fixed;
+    background-position: center center;
+    width: 100%;
+
 }
+
 .newsletter form{
     max-width: 45rem;
     text-align: center;
     padding: 5rem 10rem;
 }
+
 .newsletter form h3{
     font-size: 3rem;
     color: var(--white);
     padding-bottom: .7rem;
 }
+
 .newsletter form .box{
     width: 100%;
     margin: .7rem 0;
@@ -300,6 +305,7 @@ section{
     color: var(--black);
     border-radius: .5rem;
 }
+
 .newsletter form .box2{
     width: 30%;
     font-size: 1.5rem;
@@ -310,6 +316,7 @@ section{
     border-radius: 3rem;
     cursor:pointer;
 }
+
 .newsletter form .box2:hover{
     color: var(--white);
     background-color: var(--black);
@@ -417,7 +424,6 @@ section{
     background: var(--black);
     margin: 0 .3rem;
     border-radius: 50%;
-
 }
 .footer .share a:hover{
     background: var(--white);
