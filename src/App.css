@@ -325,12 +325,13 @@ section{
 
 .review .review-row{
     display: flex;
-    flex-direction: column ;
+    flex-direction:row ;
     align-items: center;
-    
+    justify-content:center; 
 }
+
 .review .review-row .box{
-    width: 50%; 
+    width: 99%; 
     margin-bottom: 3rem;
     padding: 3rem;
     border-radius: 3rem;
@@ -341,18 +342,22 @@ section{
 .review .review-row .box .client-review{
     margin-bottom: 3rem;
 }
+
 .review .review-row .box .client-review p{
     text-align: center;
     font-size: 2.5rem;
     line-height: 1.5;
 }
+
 .review .review-row .box .client-info{
     display: flex;
     align-items: center;
 }
+
 .review .review-row .box .client-info .img{
     padding-right: 3rem;
 }
+
 .review .review-row .box .client-info .img img{
     width: 7rem;
     height: 7rem;
@@ -363,6 +368,7 @@ section{
     font-size: 2.5rem;
 
 }
+
 .review .review-row .box .client-info .clientDetailed p{
     font-size: 1.5rem;
 }

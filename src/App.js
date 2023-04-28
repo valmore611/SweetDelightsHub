@@ -638,7 +638,7 @@ function App() {
         modules={[Autoplay, Navigation]}
         className="mySwiper"
         autoplay={{
-          delay: 3000,
+          delay: 4000,
           disableOnInteraction: false,
         }}
       > 
@@ -918,58 +918,137 @@ function App() {
 
 
     <section className="review" id="review">
-    <div className="heading">
-      <h2>Reseña de clientes</h2>
-    </div>
-    <Swiper
-        loop={true}
-        slidesPerView={1}
-        centeredSlides={true}
-        spaceBetween={30}
-        pagination={{
-        clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Navigation]}
-        className="mySwiper"
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
-      > 
-      <section className=" swiper review-row">
-          <div className="swiper-slide box">
-            <div className="client-review">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, perferendis architecto
-                 quasi eveniet aliquam sed?</p>
-            </div>
-            <div className="client-info">
-              <div className="img">
-                <img src={require(`../src/images/client1.jpg`)} alt=""/>
-              </div>
-              <div className="clientDetailed">
-                <h3>Peter Parker</h3>
-                <p>Web developer</p>
-              </div>
-            </div>
-          </div>
-          <div className="swiper-slide box">
-            <div className="client-review">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, perferendis architecto
-                quasi eveniet aliquam sed?</p>
-            </div>
-            <div className="client-info">
-              <div className="img">
-                <img src={require(`../src/images/client1.jpg`)} alt=""/>
-              </div>
-              <div className="clientDetailed">
-                <h3>Hardy Devid</h3>
-                <p>UI / UX designer</p>
-              </div>
-            </div>
-          </div>
-      </section> 
-      </Swiper>
+        <div className="heading">
+        <h2>Reseña de clientes</h2>
+        </div>
+
+        <section className="review-row">
+                <Swiper
+                spaceBetween={20}
+                loop={true}
+                // centeredSlides={true}
+                breakpoints={{
+                640: {
+                    slidesPerView: 1,
+                },
+                1160: {
+                    slidesPerView: 2,
+                },
+                1800: {
+                    slidesPerView: 3,
+                },
+                2350: {
+                    slidesPerView: 4,
+                }
+                }}
+                modules={[Navigation]}
+                navigation={true}
+                className="mySwiper"
+            >
+                <SwiperSlide>
+                    <div className="box">
+                        <div className="client-review">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, perferendis architecto
+                                quasi eveniet aliquam sed? </p>
+                        </div>
+                        <div className="client-info">
+                            <div className="img">
+                                <img src={require(`../src/images/client1.jpg`)} alt=""/>
+                            </div>
+                            <div className="clientDetailed">
+                                <h3>Peter Parker</h3>
+                                <p>Web developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="box">
+                        <div className="client-review">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, perferendis architecto
+                                quasi eveniet aliquam sed?</p>
+                        </div>
+                        <div className="client-info">
+                            <div className="img">
+                                <img src={require(`../src/images/client2.png`)} alt=""/>
+                            </div>
+                            <div className="clientDetailed">
+                                <h3>Hardy Devid</h3>
+                                <p>UI / UX designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide> 
+                    <div className="box">
+                        <div className="client-review">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, perferendis architecto
+                                quasi eveniet aliquam sed?</p>
+                        </div>
+                        <div className="client-info">
+                            <div className="img">
+                                <img src={require(`../src/images/client3.png`)} alt=""/>
+                            </div>
+                            <div className="clientDetailed">
+                                <h3>Leo Messi</h3>
+                                <p>Soccer Player</p>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="box">
+                        <div className="client-review">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, perferendis architecto
+                                quasi eveniet aliquam sed?</p>
+                        </div>
+                        <div className="client-info">
+                            <div className="img">
+                                <img src={require(`../src/images/client2.png`)} alt=""/>
+                            </div>
+                            <div className="clientDetailed">
+                                <h3>Hardy Devid</h3>
+                                <p>UI / UX designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="box">
+                        <div className="client-review">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, perferendis architecto
+                                quasi eveniet aliquam sed?</p>
+                        </div>
+                        <div className="client-info">
+                            <div className="img">
+                                <img src={require(`../src/images/client2.png`)} alt=""/>
+                            </div>
+                            <div className="clientDetailed">
+                                <h3>Hardy Devid</h3>
+                                <p>UI / UX designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="box">
+                        <div className="client-review">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, perferendis architecto
+                                quasi eveniet aliquam sed?</p>
+                        </div>
+                        <div className="client-info">
+                            <div className="img">
+                                <img src={require(`../src/images/client2.png`)} alt=""/>
+                            </div>
+                            <div className="clientDetailed">
+                                <h3>Hardy Devid</h3>
+                                <p>UI / UX designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+            </Swiper>
+        </section> 
     </section>
 
     <footer class="footer" id="contact">
