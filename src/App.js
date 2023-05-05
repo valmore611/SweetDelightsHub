@@ -11,43 +11,55 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation  } from "swiper";
 
+import {  Route, Router, Link, Routes } from "react-router-dom";
+
+const Home = (): Element => <a>Home</a>
+const Product = (): Element => <a>Product</a>
+const Blogs = (): Element => <a>Blogs</a>
+
+
 function App() {
  
   return (
   <div className="App">
-    <header class="header">
-      <div class="logoContent">
-        <a href="#" class="logo"><img src={require(`../src/images/logo.png`)} alt="logo"/></a>
-        <h1 class="logoName"> RECETARIO DE POSTRES COCINA II </h1>
+    <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/blogs" element={<Blogs />} />
+    </Routes>
+    <header className="header">
+      <div className="logoContent">
+        <Link to="#" class="logo"><img src={require(`../src/images/logo.png`)} alt="logo"/></Link>
+        <h1 className="logoName"> RECETARIO DE POSTRES COCINA II </h1>
       </div>
 
-      <nav class="navbar">
-        <a href="#home">Inicio</a>
-        <a href="#product">Recetas</a>
-        <a href="#blogs">Blogs</a>
-        <a href="#review">Reviews</a>
-        <a href="#contact">Contacto</a>
+      <nav className="navbar">
+        <Link to="/">Inicio</Link>
+        <Link to="/product">Recetas</Link>
+        <Link to="/blogs">Blogs</Link>
+        <Link to="#review">Reviews</Link>
+        <Link to="#contact">Contacto</Link>
       </nav>
 
-      <div class="icon">
-        <i class="fas fa-search" id="search"></i>
-        <i class="fas fa-bars" id="menu-bar"></i>
+      <div className="icon">
+        <i className="fas fa-search" id="search"></i>
+        <i className="fas fa-bars" id="menu-bar"></i>
       </div>
 
-      <div class="search">
+      <div className="search">
         <input type="search" placeholder="search..."/>
       </div>
     </header>
 
-    <section class="home" id="home">
-      <div class="homeContent">
+    <section className="home" id="home">
+      <div className="homeContent">
         <h2>Postres irresistibles Deliciosamente fáciles </h2>
           <p>¡Bienvenido(a)s al dulce mundo de las delicias! 
               Descubre recetas irresistibles y crea tus propias obras maestras de: Galletas de vainilla, Alfajores, Pasta seca,
               Torta pie de limón, Ponquesitos, Fressier, Shots cítricos, Shots brulee de fresa, Selva negra, Cinco leches,
               Profisteroles, Golfeados, Pan dulce, Trenzas de chocolate, Rolls de canela, Donas, Bombas, Pan de guayaba y queso ¡A disfrutar!
           </p>
-            <div class="home-btn">
+            <div className="home-btn">
               <a href="#product"><button>Recetas</button></a>
             </div>
       </div>
