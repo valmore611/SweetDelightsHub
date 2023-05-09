@@ -65,7 +65,7 @@ html::-webkit-scrollbar-thumb{
     border-bottom: .1rem solid var(--black);
     padding-bottom: .4rem;
 }
-.header .icon i{
+.header .icon {
     font-size: 2rem;
     margin-right: 2rem;
     color: var(--black);
@@ -412,11 +412,10 @@ section{
 .footer .box-container .box a i{
     padding-right: .5rem;
     color: var(--black);
-}
+} 
 .footer .box-container .box a:hover i{
     padding-right: 2rem;
 }
-
 .footer .share{
     padding: 1rem 0;
     text-align: center;

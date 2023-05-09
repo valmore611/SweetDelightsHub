@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useRef, useState } from "react";
+//import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,39 +11,41 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation  } from "swiper";
 
-import {  Route, Router, Link, Routes } from "react-router-dom";
+import {  Route, Link, Routes } from "react-router-dom";
 
-const Home = (): Element => <a>Home</a>
-const Product = (): Element => <a>Product</a>
-const Blogs = (): Element => <a>Blogs</a>
+// const Home = (): Element => <a>Home</a>
+// const Product = (): Element => <a>Product</a>
+// const Blogs = (): Element => <a>Blogs</a>
 
+// import FontAwesome Icon
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowAltCircleRight, faSearch } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
  
   return (
   <div className="App">
-    <Routes>
+    {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/product" element={<Product />} />
         <Route path="/blogs" element={<Blogs />} />
-    </Routes>
+    </Routes> */}
     <header className="header">
       <div className="logoContent">
-        <Link to="#" class="logo"><img src={require(`../src/images/logo.png`)} alt="logo"/></Link>
+        <a href="#" class="logo"><img src={require(`../src/images/logo.png`)} alt="logo"/></a>
         <h1 className="logoName"> RECETARIO DE POSTRES COCINA II </h1>
       </div>
 
       <nav className="navbar">
-        <Link to="/">Inicio</Link>
-        <Link to="/product">Recetas</Link>
-        <Link to="/blogs">Blogs</Link>
-        <Link to="#review">Reviews</Link>
-        <Link to="#contact">Contacto</Link>
+        <a href="/#">Inicio</a>
+        <a href="/#product">Recetas</a>
+        <a href="/#blogs">Blogs</a>
+        <a href="/#review">Reviews</a>
+        <a href="/#contact">Contacto</a>
       </nav>
 
       <div className="icon">
-        <i className="fas fa-search" id="search"></i>
-        <i className="fas fa-bars" id="menu-bar"></i>
+        <FontAwesomeIcon className="fas fa-search" id="search" icon={faSearch}/>
       </div>
 
       <div className="search">
@@ -63,6 +65,7 @@ function App() {
               <a href="#product"><button>Recetas</button></a>
             </div>
       </div>
+
     </section>
 
     <section className="product" id="product">
@@ -1074,11 +1077,11 @@ function App() {
           </div>
           <div class="box">
               <h3>Quick link</h3>
-              <a href="#"> <i class="fas fa-arrow-right"></i>Home</a>
-              <a href="#"> <i class="fas fa-arrow-right"></i>product</a>
-              <a href="#"> <i class="fas fa-arrow-right"></i>blogs</a>
-              <a href="#"> <i class="fas fa-arrow-right"></i>review</a>
-              <a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
+              <a href="#"> <FontAwesomeIcon className="fas fa-arrow-right" icon={faArrowAltCircleRight}/> Home</a> 
+              <a href="#"> <FontAwesomeIcon className="fas fa-arrow-right" icon={faArrowAltCircleRight}/> Product</a>
+              <a href="#"> <FontAwesomeIcon className="fas fa-arrow-right" icon={faArrowAltCircleRight}/> Blogs</a>
+              <a href="#"> <FontAwesomeIcon className="fas fa-arrow-right" icon={faArrowAltCircleRight}/> Review</a>
+              <a href="#"> <FontAwesomeIcon className="fas fa-arrow-right" icon={faArrowAltCircleRight}/> Contact</a>
           </div>
           <div class="box">
               <h3>Extra link</h3>
@@ -1095,7 +1098,7 @@ function App() {
           </div>
         </div> {/*div box-container*/}
         <div className="share">
-            <a href="#" className="fab fa-facebook-f"></a>
+            <a href="#" className="fab fa-facebook-f"> <img src={require(`../src/images/facebook.svg`)} alt=""/></a> 
             <a href="#" className="fab fa-twitter"></a>
             <a href="#" className="fab fa-instagram"></a>
             <a href="#" className="fab fa-linkedin"></a>
